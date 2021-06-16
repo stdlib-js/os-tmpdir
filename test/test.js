@@ -43,8 +43,8 @@ tape( 'the function checks the `TEMP` environment variable on Windows platforms'
 	var dir;
 
 	tmpdir = proxyquire( './../lib/tmpdir.js', {
-		'@stdlib/assert/is-windows': true,
-		'@stdlib/process/env': {
+		'@stdlib/assert-is-windows': true,
+		'@stdlib/process-env': {
 			'TEMP': 'C:\\foo\\bar\\baz',
 			'@noCallThru': true
 		}
@@ -61,8 +61,8 @@ tape( 'the function checks the `TMP` environment variable on Windows platforms',
 	var dir;
 
 	tmpdir = proxyquire( './../lib/tmpdir.js', {
-		'@stdlib/assert/is-windows': true,
-		'@stdlib/process/env': {
+		'@stdlib/assert-is-windows': true,
+		'@stdlib/process-env': {
 			'TMP': 'C:\\foo\\bar\\baz',
 			'@noCallThru': true
 		}
@@ -79,8 +79,8 @@ tape( 'the function checks the `SystemRoot` environment variable on Windows plat
 	var dir;
 
 	tmpdir = proxyquire( './../lib/tmpdir.js', {
-		'@stdlib/assert/is-windows': true,
-		'@stdlib/process/env': {
+		'@stdlib/assert-is-windows': true,
+		'@stdlib/process-env': {
 			'SystemRoot': 'C:\\foo\\bar\\baz',
 			'@noCallThru': true
 		}
@@ -97,8 +97,8 @@ tape( 'the function checks the `windir` environment variable on Windows platform
 	var dir;
 
 	tmpdir = proxyquire( './../lib/tmpdir.js', {
-		'@stdlib/assert/is-windows': true,
-		'@stdlib/process/env': {
+		'@stdlib/assert-is-windows': true,
+		'@stdlib/process-env': {
 			'windir': 'C:\\foo\\bar\\baz',
 			'@noCallThru': true
 		}
@@ -115,8 +115,8 @@ tape( 'the function returns `\\temp` as the fallback directory for temporary fil
 	var dir;
 
 	tmpdir = proxyquire( './../lib/tmpdir.js', {
-		'@stdlib/assert/is-windows': true,
-		'@stdlib/process/env': {
+		'@stdlib/assert-is-windows': true,
+		'@stdlib/process-env': {
 			'@noCallThru': true
 		}
 	});
@@ -132,8 +132,8 @@ tape( 'the function checks the `TMPDIR` environment variable on POSIX platforms'
 	var dir;
 
 	tmpdir = proxyquire( './../lib/tmpdir.js', {
-		'@stdlib/assert/is-windows': false,
-		'@stdlib/process/env': {
+		'@stdlib/assert-is-windows': false,
+		'@stdlib/process-env': {
 			'TMPDIR': '/foo/bar/baz',
 			'@noCallThru': true
 		}
@@ -150,8 +150,8 @@ tape( 'the function checks the `TMP` environment variable on POSIX platforms', f
 	var dir;
 
 	tmpdir = proxyquire( './../lib/tmpdir.js', {
-		'@stdlib/assert/is-windows': false,
-		'@stdlib/process/env': {
+		'@stdlib/assert-is-windows': false,
+		'@stdlib/process-env': {
 			'TMP': '/foo/bar/baz',
 			'@noCallThru': true
 		}
@@ -168,8 +168,8 @@ tape( 'the function checks the `TEMP` environment variable on POSIX platforms', 
 	var dir;
 
 	tmpdir = proxyquire( './../lib/tmpdir.js', {
-		'@stdlib/assert/is-windows': false,
-		'@stdlib/process/env': {
+		'@stdlib/assert-is-windows': false,
+		'@stdlib/process-env': {
 			'TEMP': '/foo/bar/baz',
 			'@noCallThru': true
 		}
@@ -186,8 +186,8 @@ tape( 'the function returns `/tmp` as the fallback directory for temporary files
 	var dir;
 
 	tmpdir = proxyquire( './../lib/tmpdir.js', {
-		'@stdlib/assert/is-windows': false,
-		'@stdlib/process/env': {
+		'@stdlib/assert-is-windows': false,
+		'@stdlib/process-env': {
 			'@noCallThru': true
 		}
 	});
@@ -209,8 +209,8 @@ tape( 'the function removes trailing slashes on Windows paths (non-device)', fun
 	};
 
 	tmpdir = proxyquire( './../lib/tmpdir.js', {
-		'@stdlib/assert/is-windows': true,
-		'@stdlib/process/env': env
+		'@stdlib/assert-is-windows': true,
+		'@stdlib/process-env': env
 	});
 
 	dir = tmpdir();
@@ -229,8 +229,8 @@ tape( 'the function removes trailing slashes on POSIX paths', function test( t )
 	var dir;
 
 	tmpdir = proxyquire( './../lib/tmpdir.js', {
-		'@stdlib/assert/is-windows': false,
-		'@stdlib/process/env': {
+		'@stdlib/assert-is-windows': false,
+		'@stdlib/process-env': {
 			'TEMP': '/foo/bar/baz/',
 			'@noCallThru': true
 		}
