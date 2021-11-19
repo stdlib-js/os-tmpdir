@@ -20,7 +20,7 @@ limitations under the License.
 
 # tmpdir
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Return the directory for storing temporary files.
 
@@ -125,6 +125,23 @@ $ tmpdir
 
 <!-- /.cli -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/os/configdir`][@stdlib/os/configdir]</span><span class="delimiter">: </span><span class="description">return a directory for user-specific configuration files.</span>
+-   <span class="package-name">[`@stdlib/os/homedir`][@stdlib/os/homedir]</span><span class="delimiter">: </span><span class="description">return the current user's home directory.</span>
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -168,8 +185,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/os-tmpdir/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/os-tmpdir?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/os-tmpdir.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/os-tmpdir/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
@@ -179,6 +200,14 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/os-tmpdir/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/os/configdir]: https://github.com/stdlib-js/os-configdir
+
+[@stdlib/os/homedir]: https://github.com/stdlib-js/os-homedir
+
+<!-- </related-links> -->
 
 </section>
 
