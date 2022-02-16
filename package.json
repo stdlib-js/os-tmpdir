@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/os-tmpdir",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Return the directory for storing temporary files.",
   "license": "Apache-2.0",
   "author": {
