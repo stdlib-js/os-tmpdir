@@ -44,7 +44,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-tmpdir = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/os-tmpdir@umd/browser.js' )
+tmpdir = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/os-tmpdir@v0.1.0-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -56,7 +56,7 @@ var tmpdir = require( 'path/to/vendor/umd/os-tmpdir/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/os-tmpdir@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/os-tmpdir@v0.1.0-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -93,7 +93,7 @@ var dir = tmpdir();
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/constants-path-sep@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/os-tmpdir@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/os-tmpdir@v0.1.0-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
