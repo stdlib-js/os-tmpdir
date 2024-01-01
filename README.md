@@ -35,17 +35,69 @@ limitations under the License.
 
 > Return the directory for storing temporary files.
 
+<section class="installation">
 
+## Installation
 
+```bash
+npm install @stdlib/os-tmpdir
+```
 
+Alternatively,
 
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
+</section>
 
+<section class="usage">
+
+## Usage
+
+```javascript
+var tmpdir = require( '@stdlib/os-tmpdir' );
+```
+
+#### tmpdir()
+
+Returns the directory for storing temporary files.
+
+```javascript
+var dir = tmpdir();
+// e.g., returns '/path/to/temporary/files/directory'
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var PATH_SEP = require( '@stdlib/constants-path-sep' );
+var tmpdir = require( '@stdlib/os-tmpdir' );
+
+var parts = tmpdir().split( PATH_SEP );
+console.log( parts );
+```
+
+</section>
+
+<!-- /.examples -->
+
+* * *
 
 <section class="cli">
 
-
+## CLI
 
 <section class="installation">
 
@@ -63,7 +115,7 @@ npm install -g @stdlib/os-tmpdir-cli
 
 <section class="usage">
 
-## Usage
+### Usage
 
 ```text
 Usage: tmpdir [options]
@@ -80,7 +132,7 @@ Options:
 
 <section class="examples">
 
-## Examples
+### Examples
 
 ```bash
 $ tmpdir
@@ -99,9 +151,10 @@ $ tmpdir
 
 <section class="related">
 
+* * *
+
 ## See Also
 
--   <span class="package-name">[`@stdlib/os-tmpdir`][@stdlib/os-tmpdir]</span><span class="delimiter">: </span><span class="description">return the directory for storing temporary files.</span>
 -   <span class="package-name">[`@stdlib/os-configdir`][@stdlib/os/configdir]</span><span class="delimiter">: </span><span class="description">return a directory for user-specific configuration files.</span>
 -   <span class="package-name">[`@stdlib/os-homedir`][@stdlib/os/homedir]</span><span class="delimiter">: </span><span class="description">return the current user's home directory.</span>
 
@@ -122,7 +175,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-### Community
+#### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -135,7 +188,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -145,8 +198,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/os-tmpdir-cli.svg
-[npm-url]: https://npmjs.org/package/@stdlib/os-tmpdir-cli
+[npm-image]: http://img.shields.io/npm/v/@stdlib/os-tmpdir.svg
+[npm-url]: https://npmjs.org/package/@stdlib/os-tmpdir
 
 [test-image]: https://github.com/stdlib-js/os-tmpdir/actions/workflows/test.yml/badge.svg?branch=main
 [test-url]: https://github.com/stdlib-js/os-tmpdir/actions/workflows/test.yml?query=branch:main
