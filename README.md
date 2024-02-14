@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import tmpdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-tmpdir@deno/mod.js';
+import tmpdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-tmpdir@v0.2.0-deno/mod.js';
 ```
 
 #### tmpdir()
@@ -66,7 +66,7 @@ var dir = tmpdir();
 
 ```javascript
 import PATH_SEP from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-path-sep@deno/mod.js';
-import tmpdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-tmpdir@deno/mod.js';
+import tmpdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-tmpdir@v0.2.0-deno/mod.js';
 
 var parts = tmpdir().split( PATH_SEP );
 console.log( parts );
