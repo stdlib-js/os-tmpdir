@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import tmpdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-tmpdir@esm/index.mjs';
+import tmpdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-tmpdir@v0.2.2-esm/index.mjs';
 ```
 
 #### tmpdir()
@@ -71,7 +71,7 @@ var dir = tmpdir();
 <script type="module">
 
 import PATH_SEP from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-path-sep@esm/index.mjs';
-import tmpdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-tmpdir@esm/index.mjs';
+import tmpdir from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-tmpdir@v0.2.2-esm/index.mjs';
 
 var parts = tmpdir().split( PATH_SEP );
 console.log( parts );
