@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-05-26)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`4531b43`](https://github.com/stdlib-js/stdlib/commit/4531b43128fd72fd9c8104187d2fd3ae3cf321d7) - **docs:** fix JSDoc text [(#12296)](https://github.com/stdlib-js/stdlib/pull/12296) _(by Philipp Burckhardt)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.3">
 
 ## 0.2.3 (2026-02-07)
